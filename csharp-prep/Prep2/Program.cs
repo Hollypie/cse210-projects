@@ -11,22 +11,22 @@ class Program
         Console.WriteLine();
         string letter = "U";
 
-        if (gradeNum > 90)
+        if (gradeNum >= 90)
         {
             letter = "A";
             passed = true;
         }
-        else if (gradeNum > 80)
+        else if (gradeNum >= 80)
         {
             letter = "B";
             passed = true;
         }
-        else if (gradeNum > 70)
+        else if (gradeNum >= 70)
         {
             letter = "C";
             passed = true;
         }
-        else if (gradeNum > 60)
+        else if (gradeNum >= 60)
         {
             letter = "D";
             passed = false;
@@ -39,7 +39,7 @@ class Program
 
         Console.Write($"You have a {letter}");
 
-        if (!(gradeNum < 60))
+        if (!(gradeNum < 60 || gradeNum > 95))
         {
             if (gradeNum % 10 >= 7)
             {
