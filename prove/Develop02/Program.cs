@@ -1,3 +1,6 @@
+// Author: Holly Briggs, 2/26/2024
+// Exceeds Expectations - Including all of the requirements of the assignment I added a couple of features. I created a way for the program to keep track of used prompts so that the user is never given the same prompt twice. I also added a "report" feature to the menu. It allows to user to get a report of the number of journal entries contained in their file. Also I added the feature that the report displays all the used prompts. This should work correctly so long as the user is loading and saving their entries properly with each use and to the same file each time. 
+
 using System;
 using System.IO;
 
@@ -15,6 +18,7 @@ class Program
         {
             // instantiates an Entry object.
             Entry anEntry = new Entry();
+            
             // Generates a menu of options for the user. Inquires what the user wishes to do.
             Console.WriteLine();
             Console.WriteLine("Welcome to the Journal Program");
@@ -76,7 +80,6 @@ class Program
                 // Displays a report of the number of entries user has stored in a text file and also displays a list of all the prompts the user has previously used.
                 Console.WriteLine("Please enter the filename you want to display a report of: include .txt in your response: ");
                 string reportFile = Console.ReadLine();
-                
                 theJournal.DisplayReport(reportFile);
                 Console.WriteLine();
             }
