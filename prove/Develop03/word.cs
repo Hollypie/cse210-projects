@@ -1,29 +1,30 @@
 public class Word
 {
-    
-    List<string> _wordList = new List<string>();
-    // private string _word;
+    private string _text;
+    private bool _isHidden;
 
-    public List<string> CreateWordList(string text)
+    public Word(string text)
     {
-        string[] _wordList = text.Split(" ");
-
-        foreach (string word in wordList)
-        {
-            // word = word.Replace(",", "");
-            // word = word.Replace(" ", "");
-            _wordList.Add(word);
-        }
-
-        return wordList;
+        
     }
 
-    public void DisplayList()
+    public void Hide()
     {
-        foreach (string word in wordList)
-        {
-            Console.WriteLine(word);
-        }
+
     }
 
+    public void Show()
+    {
+
+    }
+
+    public bool IsHidden()
+    {
+        return false;
+    }
+
+    public string GetDisplayText()
+    {
+        return "";
+    }
 }

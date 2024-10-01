@@ -1,21 +1,22 @@
-public class VerseReference
+public class Reference
 {
     private string _book;
-    private string _chapter;
-    private string _verseStart;
-    // private string _verseEnd;
+    private int _chapter;
+    private int _verse;
+    private int _endVerse;
 
-    public VerseReference(string book, string chapter, string verseStart)
+    public Reference(string book, int chapter, int verse)
     {
-        _book = book;
-        _chapter = chapter;
-        _verseStart = verseStart;
+
     }
 
+    public Reference(string book, int chapter, int verse, int endVerse)
+    {
 
-    public string DisplayReference()
-    {       
-        string text = $"{_book} {_chapter}: {_verseStart}";     
-        return text;
+    }
+
+    public string GetDisplayText()
+    {
+        return "";
     }
 }

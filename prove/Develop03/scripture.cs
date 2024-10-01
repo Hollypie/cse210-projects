@@ -1,15 +1,25 @@
 public class Scripture
 {
-    private string _verseText;
+    private Reference _reference;
+    private List<Word> _words;
 
-public void AddScripture(string text)
-{
-    _verseText = text;
-}
+    public Scripture(Reference reference, string text)
+    {
 
-public void DisplayScripture()
-{
-    Console.WriteLine(_verseText);
-}
+    }
 
+    public void HideRandomWords(int numberToHide)
+    {
+
+    }
+
+    public string GetDisplayText()
+    {
+        return "";
+    }
+
+    public bool IsCompletelyHidden()
+    {
+        return false;
+    }
 }
