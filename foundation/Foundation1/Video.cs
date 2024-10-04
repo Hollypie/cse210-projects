@@ -36,11 +36,7 @@ public class Video
 
     public void NumberOfComments(List<Comment> comments)
     {
-        int count = 0;
-        foreach (Comment comment in comments)
-        {
-            count ++;
-        }
+        int count = _comments.Count();
 
         Console.WriteLine($"Number of Comments: {count}");
     }
