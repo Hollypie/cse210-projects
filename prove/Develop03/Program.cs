@@ -48,7 +48,15 @@ class Program
                 
                 Console.WriteLine(scripture.GetDisplayText());
                 Console.WriteLine();
+
+                if (scripture.IsCompletelyHidden() || scripture.AllWordsPartiallyHidden())
+                {
+                    Console.WriteLine("Program ended. Goodbye!");
+                    System.Environment.Exit(0);
+                }
             }
+
+            
         }
     }
 }
