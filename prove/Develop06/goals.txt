@@ -1,0 +1,7 @@
+1500
+Reward~~cookie~~2000
+SimpleGoal~~Give Talk~~Give a talk in church~~50~~False
+SimpleGoal~~Clean Closet~~Clean your bedroom closet~~20~~True
+EternalGoal~~Study Scriptures~~Read Scriptures Daily~~10
+ChecklistGoal~~Exercise~~Do 20 minutes of Exercise Daily~~50~~1000~~7~~7
+ChecklistGoal~~Green Smoothie~~Make and drink a green smoothie daily~~10~~1000~~7~~2
