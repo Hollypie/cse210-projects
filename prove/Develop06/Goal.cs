@@ -62,7 +62,10 @@ public abstract class Goal
 
     public abstract bool IsComplete();    
     
-    public abstract string GetDetailsString(int i, string x, Goal goal);
+    public virtual string GetDetailsString(int i, string x, Goal goal)
+    {
+        return $"   {i + 1}. [{x}] {goal.GetName()}: {goal.GetDescription()}, points: {goal.GetPoints()}";
+    }
 
     public abstract string GetStringRepresentation(Goal goal);
 }

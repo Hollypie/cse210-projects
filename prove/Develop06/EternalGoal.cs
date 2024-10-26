@@ -17,12 +17,6 @@ public class EternalGoal : Goal
     {
         return false;
     }
-    
-    // Returns a formatted string that shows the goal details.
-    public override string GetDetailsString(int i, string x, Goal goal)
-    {
-        return $"   {i + 1}. [{x}] {goal.GetName()}: {goal.GetDescription()}, points: {goal.GetPoints()}";
-    }
 
     // Returns a formatted string that will store the goal information in a way that LoadString() method will be able to read.
     public override string GetStringRepresentation(Goal goal)

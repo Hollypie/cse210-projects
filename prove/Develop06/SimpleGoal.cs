@@ -42,13 +42,6 @@ public class SimpleGoal : Goal
         return _isComplete;
     }
 
-    // Formats a string containing all the details of a goal. It is used when the user requests a list of goals to be displayed.
-    public override string GetDetailsString(int i, string x, Goal goal)
-    {
-        
-        return $"   {i + 1}. [{x}] {goal.GetName()}: {goal.GetDescription()}, points: {goal.GetPoints()}";
-    }
-
     // Formats and returns a string that will be printed to a .txt file to store the goals the user wishes to save.
     public override string GetStringRepresentation(Goal goal)
     {
