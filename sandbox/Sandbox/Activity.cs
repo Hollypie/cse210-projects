@@ -82,5 +82,8 @@ public abstract class Activity
         }
 
         return $"{GetDate()} {activityType} ({GetDuration():F1})- {endingString}";
+        
+        // Distance: {GetDistance():F1} miles, Speed: {GetSpeed():F1} mph, Pace: {GetPace():F1} min per mile";
+        // 03 Nov 2022 Running (30 min): Distance 4.8 km, Speed: 9.7 kph, Pace: 6.25 min per km
     }   
 }
