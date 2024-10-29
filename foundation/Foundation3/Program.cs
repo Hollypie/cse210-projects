@@ -9,7 +9,7 @@ class Program
     {
         // Instantiates each type of activity.
         RunningActivity runningActivity = new RunningActivity(30, 3);
-        SwimmingActivity swimmingActivity = new SwimmingActivity(47, 1);
+        SwimmingActivity swimmingActivity = new SwimmingActivity(47, 20);
         CyclingActivity cyclingActivity = new CyclingActivity(15, 4.3);
         
         // Creates a list to store activity objects and add the instantiated objects to the list.

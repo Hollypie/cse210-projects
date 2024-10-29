@@ -47,9 +47,9 @@ public class SwimmingActivity : Activity
         return "Swimming";
     }
 
-    // Method overrides the GetSummary() method in the base class in order to add laps to the published string and to accomadate the different formatting on the values of speed and distance. If they were formatted in the same way as the others, it would show a zero value.
+    // Method overrides the GetSummary() method in the base class in order to add laps to the published string
     public override string GetSummary()
     {
-        return $"{GetDate()} {GetActivity()} ({GetDuration():F1})- Distance: {GetDistance():F4} miles, Speed: {GetSpeed():F4} mph, Pace: {GetPace():F1} min per mile, Laps: {GetLaps():F1}";
+        return $"{GetDate()} {GetActivity()} ({GetDuration():F1})- Distance: {GetDistance():F1} miles, Speed: {GetSpeed():F1} mph, Pace: {GetPace():F1} min per mile, Laps: {GetLaps():F1}";
     }
 }
