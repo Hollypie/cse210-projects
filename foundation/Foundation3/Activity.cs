@@ -54,14 +54,16 @@ public abstract class Activity
         return _date;
     }
 
+    // Creates GetDistance method, each of the derivative methods override this method. The body doesn't matter in this case.
     public virtual double GetDistance()
     {
         throw new NotImplementedException();
     }
 
-
+    // Creates an abstract method that creates a requirement for every derivative class to have this GetActivity() method. It returns a string of the activity type for the formatted string in the GetSummary() method.
     public abstract string GetActivity();
 
+    // Creates a method that returns a formatted string showing the activity details.
     public virtual string GetSummary() 
     {
         return $"{GetDate()} {GetActivity()} ({GetDuration():F1})- Distance: {GetDistance():F1} miles, Speed: {GetSpeed():F1} mph, Pace: {GetPace():F1} min per mile.";
