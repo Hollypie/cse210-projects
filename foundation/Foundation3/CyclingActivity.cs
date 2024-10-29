@@ -34,4 +34,9 @@ public class CyclingActivity : Activity
         double pace = 60 / _speed;
         return pace;
     }
+
+    public override string GetActivity()
+    {
+        return "Cycling";
+    }
 }

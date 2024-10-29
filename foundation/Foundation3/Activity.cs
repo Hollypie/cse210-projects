@@ -54,33 +54,17 @@ public abstract class Activity
         return _date;
     }
 
-    // Getter method of _distance;
     public virtual double GetDistance()
     {
         throw new NotImplementedException();
     }
 
-    // Creates an abstract method for GetSummary() which will require every derivative class to include a GetSummary method and ensures that each overridden GetSummary method is spelled the same and requires the same number of arguments with the same datatypes.
-    public string GetSummary(Activity activity) 
-    {
-        string activityType = "";
-        string endingString = "";
-        if (activity is CyclingActivity cyclingActivity)
-        {
-            activityType = "Cycling";
-            endingString = $"Distance: {cyclingActivity.GetDistance():F1} miles, Speed: {cyclingActivity.GetSpeed():F1} mph, Pace {cyclingActivity.GetPace():F1} min per mile.";
-        }
-        else if (activity is SwimmingActivity swimmingActivity)
-        {
-            activityType = "Swimming";
-            endingString = $"Laps = {swimmingActivity.GetLaps():F1}, Distance: {swimmingActivity.GetDistance():F1} miles, Speed: {swimmingActivity.GetSpeed():F1} mph, Pace: {swimmingActivity.GetPace():F1} min per mile.";
-        }
-        else if (activity is RunningActivity runningActivity)
-        {
-            activityType = "Running";
-            endingString = $"Distance {runningActivity.GetDistance():F1} miles, Speed: {runningActivity.GetSpeed():F1} mph, Pace: {runningActivity.GetPace():F1} min per mile. ";
-        }
 
-        return $"{GetDate()} {activityType} ({GetDuration():F1})- {endingString}";
+    public abstract string GetActivity();
+
+    public virtual string GetSummary() 
+    {
+        return $"{GetDate()} {GetActivity()} ({GetDuration():F1})- Distance: {GetDistance():F1} miles, Speed: {GetSpeed():F1} mph, Pace: {GetPace():F1} min per mile.";
     }   
 }
+

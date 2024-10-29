@@ -28,4 +28,8 @@ public class RunningActivity : Activity
         return pace;
     }
 
+        public override string GetActivity()
+    {
+        return "Running";
+    }
 }

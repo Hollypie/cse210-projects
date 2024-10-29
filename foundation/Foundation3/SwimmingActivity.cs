@@ -42,4 +42,14 @@ public class SwimmingActivity : Activity
         double pace = 60 / GetSpeed();
         return pace;
     }
+
+    public override string GetActivity()
+    {
+        return "Swimming";
+    }
+
+    public override string GetSummary()
+    {
+        return $"{GetDate()} {GetActivity()} ({GetDuration():F1})- Distance: {GetDistance():F4} miles, Speed: {GetSpeed():F4} mph, Pace: {GetPace():F1} min per mile, Laps: {GetLaps():F1}";
+    }
 }

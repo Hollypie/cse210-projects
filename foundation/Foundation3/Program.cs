@@ -21,7 +21,7 @@ class Program
         // Iterates through list of objects and calls and writes Activity Summary to the screen.
         foreach (Activity activity in activites)
         {
-            Console.WriteLine(activity.GetSummary(activity));
+            Console.WriteLine(activity.GetSummary());
         }
     }
 }
